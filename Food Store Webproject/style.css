@@ -1,0 +1,425 @@
+body{
+  margin: 0;
+  min-height: 720px;
+  box-sizing: border-box;
+}
+
+
+
+.LANDING_PAGE{
+    background-color: darkgray;
+}
+
+
+/*LANDING PAGE CSS*/
+.img_deg{
+    float: right;
+    width: 40% ;
+    height: 720px;
+    
+}
+
+#title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 200px ;
+        font-size: xx-large;
+    font-style: oblique;
+    font-family: sans-serif;
+    color: RGB(85,85,85);
+    color: rgb(85, 85, 85);
+}
+
+/* From Uiverse.io by alexmaracinaru */ 
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    border: 0px solid black;
+}
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* From Uiverse.io by david-mohseni */
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 34vh;
+}
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  /*width: 100%;*/
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+
+/* PAGE-1 CSS */
+
+.background_pic{
+  background-image: url("misti_pic.png");
+  width: 100%;
+  height: 720px;
+}
+
+#bp_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: xxx-large;
+    font-family: sans-serif;
+    color: white;
+}
+
+/*#head_1{
+    position: absolute;
+    top: 1550px;
+    right: 600px;
+}*/
+
+#head_1{
+  text-align: left;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 1610px;
+  right: 360px;
+}
+
+.page_2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #faf9f7;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#para_1{
+  max-width: 400px;
+  text-align: justify;
+  background: #fff;
+  padding: 40px 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+/*#para_1{
+  position: absolute;
+    top: 1550px;
+    right: 400px;
+    max-width: 300px;
+    font-size: 16px;
+}*/
+
+/*PAGE 3 CSS*/
+.page_3{
+  margin: 0;
+  min-height: 720px;
+  box-sizing: border-box;
+  background-color: #faf9f7;
+}
+
+.spices{
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+}
+
+/*PAGE 4 CSS*/
+.page_4{
+  margin: 0;
+  min-height: 720px;
+  box-sizing: border-box;
+  background-color: #faf9f7;
+}
+
+#img_8{
+  position: absolute;
+  right: 10px;
+  height: 50vh;
+    /* display: flex
+; */
+    /* justify-items: right; */
+    padding: 180px 40px 180px 10px;
+}
+
+.page_4 {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ 
+.menu-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    
+}
+
+.menu-item:nth-child(even) {
+    border-left: 1px solid #eee;
+    padding-left: 30px; /* Adjust for gap from grid */
+}
+
+.menu-item:nth-child(odd) {
+    padding-right: 30px; /* Adjust for gap from grid */
+}
+
+.menu-item h2 {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.menu-item p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #666;
+    padding-top: 200px;
+}
+
+.menu-item img{
+ position: absolute;
+ height: 20vh;
+ 
+}
+
+.menu-container button_1{
+    display: flex;
+    justify-content: right;
+}
+
+
+/*Page 5 CSS*/
+
+.page_5 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background for the whole page */
+}
+
+.container {
+    display: flex;
+    width: 90%; /* Adjust as needed */
+    max-width: 1200px; /* Max width for the content area */
+    background-color: #fff; /* White background for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-section {
+    flex: 1; /* Takes up one part of the flexible space */
+    position: relative;
+    overflow: hidden;
+}
+
+.food-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    display: block;
+}
+
+.info-section {
+    flex: 1; /* Takes up one part of the flexible space */
+    padding: 40px;
+    background-color: #f8f8f8; /* Slightly off-white for the info section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact_head {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+.contact-label {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 0;
+}
+
+.contact-detail {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Basic responsiveness*/ 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info-section {
+        padding: 20px;
+    }
+
+    #contact_head {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+} 
